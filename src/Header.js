@@ -61,7 +61,7 @@ const Header = () => {
           />
         </div>
         <button className="add-btn" onClick={addItemToCard}>
-          Card to Add
+          Add to Cart
         </button>
       </div>
       <br />
