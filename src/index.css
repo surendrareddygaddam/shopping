@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.t-c {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input-box {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+.input-box input {
+  width: 30vh;
+  border: none;
+}
+.categories {
+  display: inline-block;
+  font-size: 20px;
+  padding: 3px;
+  margin-right: 20px;
+}
+.select {
+  text-align: center;
+}
+.add-btn {
+  padding: 4px;
+}
+input {
+  outline: none;
+  font-size: 16px;
+}
+.head-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: antiquewhite;
+
+  border-bottom: 1px solid black;
+}
+.card {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card-head {
+  border: 1px solid gray;
+  display: inline-block;
+  /* margin: 10px; */
+  height: 250px;
+  width: 350px;
+  overflow: auto;
+}
+.card-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.remove-item {
+  visibility: hidden;
+}
+.card-item:hover {
+  background-color: cornflowerblue;
+  /* padding: 5px; */
+}
+.card-item:hover .remove-item {
+  visibility: visible;
+}
+
+@media (max-width: 850px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
